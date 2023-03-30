@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container, Tile } from "./styles";
 
-const Signin: React.FC = () => {
+const SignIn: React.FC = () => {
     return (
         <Container>
             <Tile>Bem vindo ao instagram</Tile>
@@ -10,4 +10,4 @@ const Signin: React.FC = () => {
     );
 };
 
-export default Signin;
+export default SignIn;

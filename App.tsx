@@ -1,8 +1,8 @@
-import Signin from "@modules/Authentication/SignIn";
+import SignIn from "@modules/Authentication/SignIn";
 import React from "react";
 
 const App: React.FC = () => {
-    return <Signin />;
+    return <SignIn />;
 };
 
 export default App;
