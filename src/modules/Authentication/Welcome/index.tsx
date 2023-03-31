@@ -22,13 +22,16 @@ const Welcome: React.FC = () => {
                         <Avatar url="https://avatars.githubusercontent.com/u/7297243?s=96&v=4" />
                         <UserNickname>antoniosvuono</UserNickname>
                     </ProfileContent>
+
                     <PrimaryButton title="Log in" />
 
                     <UserNickname
                         style={{ marginTop: 30 }}
                         onPress={() => console.log("pressed")}
                         isBlue
-                    ></UserNickname>
+                    >
+                        Switch account
+                    </UserNickname>
                 </WelcomeContent>
             </Container>
             <BottomContent />

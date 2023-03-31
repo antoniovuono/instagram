@@ -12,6 +12,8 @@
     "@expo-google-fonts/poppins": "^0.2.3",
     "@types/react": "~18.0.27",
     "expo": "~48.0.9",
+    "expo-build-properties": "~0.5.1",
+    "expo-dev-client": "~2.1.6",
     "expo-font": "~11.1.1",
     "expo-splash-screen": "~0.18.1",
     "expo-status-bar": "~1.4.4",
@@ -35,5 +37,15 @@
   "eslintConfig": {
     "extends": "universe"
   },
+  "plugins": [
+    [
+      "expo-build-properties",
+      {
+        "ios": {
+          "flipper": true
+        }
+      }
+    ]
+  ],
   "private": true
 }
