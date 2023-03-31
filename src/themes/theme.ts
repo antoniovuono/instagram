@@ -5,6 +5,7 @@ export default {
         primaryTitleColor: "#FFFFFF",
         buttonColor: "#3797EF",
         warningColor: "#ED4956",
+        primaryBorder: "#595959",
     },
 
     fonts: {

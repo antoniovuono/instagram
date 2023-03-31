@@ -24,8 +24,8 @@ export const UserNickname = styled.Text<{ isBlue?: boolean }>`
     margin-top: 13px;
     ${({ theme, isBlue }) => css`
         color: ${isBlue
-            ? theme.colors.primaryTitleColor
-            : theme.colors.buttonColor};
+            ? theme.colors.buttonColor
+            : theme.colors.primaryTitleColor};
         font-family: ${theme.fonts.primaryBlack};
     `}
 `;
