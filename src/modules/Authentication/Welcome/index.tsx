@@ -2,7 +2,12 @@ import LogotipoIcon from "@assets/icons/logotipo.svg";
 import Avatar from "@components/Avatar";
 import React from "react";
 
-import { Container, ProfileContent, WelcomeContent } from "./styles";
+import {
+    Container,
+    ProfileContent,
+    UserNickname,
+    WelcomeContent,
+} from "./styles";
 
 const Welcome: React.FC = () => {
     return (
@@ -12,6 +17,7 @@ const Welcome: React.FC = () => {
 
                 <ProfileContent>
                     <Avatar url="https://avatars.githubusercontent.com/u/7297243?s=96&v=4" />
+                    <UserNickname>antoniosvuono</UserNickname>
                 </ProfileContent>
             </WelcomeContent>
         </Container>

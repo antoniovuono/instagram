@@ -1,3 +1,4 @@
+import { css } from "styled-components";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -14,4 +15,14 @@ export const WelcomeContent = styled.View`
 
 export const ProfileContent = styled.View`
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const UserNickname = styled.Text`
+    margin-top: 13px;
+    ${({ theme }) => css`
+        color: ${theme.colors.primaryTitleColor};
+        font-family: ${theme.fonts.primaryBlack};
+    `}
 `;
