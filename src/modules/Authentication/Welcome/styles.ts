@@ -7,6 +7,11 @@ export const Container = styled.View`
 `;
 
 export const WelcomeContent = styled.View`
+    padding: 20px 34px;
     justify-content: center;
     align-items: center;
+`;
+
+export const ProfileContent = styled.View`
+    margin-top: 30px;
 `;
