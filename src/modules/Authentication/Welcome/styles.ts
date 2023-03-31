@@ -18,6 +18,8 @@ export const ProfileContent = styled.View`
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    padding: 10px;
+    height: 140px;
 `;
 
 export const UserNickname = styled.Text<{ isBlue?: boolean }>`
