@@ -22,7 +22,7 @@ export const ProfileContent = styled.View`
     height: 140px;
 `;
 
-export const UserNickname = styled.Text<{ isBlue?: boolean }>`
+export const ContentText = styled.Text<{ isBlue?: boolean }>`
     margin-top: 13px;
     ${({ theme, isBlue }) => css`
         color: ${isBlue

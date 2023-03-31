@@ -6,8 +6,8 @@ import React from "react";
 import {
     Container,
     ProfileContent,
-    UserNickname,
     WelcomeContent,
+    ContentText,
 } from "./styles";
 import BottomContent from "../components/BottomContent";
 
@@ -20,18 +20,18 @@ const Welcome: React.FC = () => {
 
                     <ProfileContent>
                         <Avatar url="https://avatars.githubusercontent.com/u/7297243?s=96&v=4" />
-                        <UserNickname>antoniosvuono</UserNickname>
+                        <ContentText>antoniosvuono</ContentText>
                     </ProfileContent>
 
                     <PrimaryButton title="Log in" />
 
-                    <UserNickname
+                    <ContentText
                         style={{ marginTop: 30 }}
                         onPress={() => console.log("pressed")}
                         isBlue
                     >
                         Switch account
-                    </UserNickname>
+                    </ContentText>
                 </WelcomeContent>
             </Container>
             <BottomContent />

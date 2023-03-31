@@ -8,6 +8,7 @@ import {
 } from "@expo-google-fonts/poppins";
 import Welcome from "@modules/Authentication/Welcome";
 import React from "react";
+import { StatusBar } from "react-native";
 import { ThemeProvider } from "styled-components";
 
 import theme from "./src/themes/theme";
@@ -27,6 +28,11 @@ const App: React.FC = () => {
 
     return (
         <ThemeProvider theme={theme}>
+            <StatusBar
+                backgroundColor="transparent"
+                translucent
+                barStyle="light-content"
+            />
             <Welcome />
         </ThemeProvider>
     );
