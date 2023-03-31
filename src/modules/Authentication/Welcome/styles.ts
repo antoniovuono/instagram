@@ -17,12 +17,15 @@ export const ProfileContent = styled.View`
     margin-top: 30px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 `;
 
-export const UserNickname = styled.Text`
+export const UserNickname = styled.Text<{ isBlue?: boolean }>`
     margin-top: 13px;
-    ${({ theme }) => css`
-        color: ${theme.colors.primaryTitleColor};
+    ${({ theme, isBlue }) => css`
+        color: ${isBlue
+            ? theme.colors.primaryTitleColor
+            : theme.colors.buttonColor};
         font-family: ${theme.fonts.primaryBlack};
     `}
 `;

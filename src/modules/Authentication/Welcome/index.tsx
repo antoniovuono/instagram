@@ -1,5 +1,6 @@
 import LogotipoIcon from "@assets/icons/logotipo.svg";
 import Avatar from "@components/Avatar";
+import PrimaryButton from "@components/PrimaryButton";
 import React from "react";
 
 import {
@@ -19,6 +20,14 @@ const Welcome: React.FC = () => {
                     <Avatar url="https://avatars.githubusercontent.com/u/7297243?s=96&v=4" />
                     <UserNickname>antoniosvuono</UserNickname>
                 </ProfileContent>
+                <PrimaryButton title="Log in" />
+
+                <UserNickname
+                    style={{ marginTop: 30 }}
+                    onPress={() => console.log("pressed")}
+                >
+                    Switch account
+                </UserNickname>
             </WelcomeContent>
         </Container>
     );

@@ -4,6 +4,6 @@ export const Container = styled.Image`
     height: 85px;
     width: 85px;
     border-radius: 50px;
-    border-width: 2px;
+    border-width: 1px;
     border-color: ${({ theme }) => theme.colors.primaryTitleColor};
 `;
