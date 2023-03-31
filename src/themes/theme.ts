@@ -7,5 +7,11 @@ export default {
         warningColor: "#ED4956",
     },
 
-    fonts: {},
+    fonts: {
+        primaryRegular: "Poppins_400Regular",
+        primaryMedium: "Poppins_500Medium",
+        primarySemiBold: "Poppins_600SemiBold",
+        primaryBold: "Poppins_700Bold",
+        primaryBlack: "Poppins_900Black",
+    },
 };
