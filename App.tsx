@@ -37,7 +37,7 @@ const App: React.FC = () => {
                 translucent
                 barStyle="light-content"
             />
-            <Welcome />
+            <SignIn />
         </ThemeProvider>
     );
 };

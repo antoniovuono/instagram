@@ -35,9 +35,9 @@ export const ButtonAuthenticateContent = styled.View`
 `;
 
 export const SignUpTextContent = styled.View`
-    height: 145px;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 65px;
 `;
 
 export const SignUpTextLabel = styled.Text<{
