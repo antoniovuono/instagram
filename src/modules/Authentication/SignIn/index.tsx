@@ -1,11 +1,26 @@
-import React from "react";
+import LogotipoIcon from "@assets/icons/logotipo.svg";
+import TextInput from "@components/TextInput";
+import React, { useState } from "react";
 
-import { Container, Tile } from "./styles";
+import { BodyContent, Container, SignInFormContent } from "./styles";
 
 const SignIn: React.FC = () => {
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+
     return (
         <Container>
-            <Tile>Bem vindo ao instagrams</Tile>
+            <BodyContent>
+                <LogotipoIcon />
+
+                <SignInFormContent>
+                    <TextInput
+                        placeholder="username"
+                        value={username}
+                        onChangeText={setUsername}
+                    />
+                </SignInFormContent>
+            </BodyContent>
         </Container>
     );
 };
