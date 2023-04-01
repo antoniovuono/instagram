@@ -13,20 +13,19 @@ export const BodyContent = styled.View`
     align-items: center;
 `;
 
-export const SignInFormContent = styled.View`
+export const SignUpFormContent = styled.View`
     width: 100%;
     margin-top: 39px;
     justify-content: space-between;
-    height: 125px;
 `;
 
 export const TextLabel = styled.Text`
     text-align: right;
-    margin-top: 10px
-        ${({ theme }) => css`
-            color: ${theme.colors.buttonColor};
-            font-family: ${theme.fonts.primaryMedium};
-        `};
+
+    ${({ theme }) => css`
+        color: ${theme.colors.buttonColor};
+        font-family: ${theme.fonts.primaryMedium};
+    `}
 `;
 
 export const ButtonAuthenticateContent = styled.View`

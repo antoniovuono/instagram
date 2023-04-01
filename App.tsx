@@ -7,6 +7,7 @@ import {
     Poppins_600SemiBold,
 } from "@expo-google-fonts/poppins";
 import SignIn from "@modules/Authentication/SignIn";
+import SignUp from "@modules/Authentication/SignUp";
 import Welcome from "@modules/Authentication/Welcome";
 import * as SplashScreen from "expo-splash-screen";
 import React from "react";
