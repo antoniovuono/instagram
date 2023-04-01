@@ -7,6 +7,7 @@ export const Container = styled.TouchableOpacity`
     background-color: ${({ theme }) => theme.colors.buttonColor};
     width: 100%;
     border-radius: 5px;
+    height: 44px;
 `;
 
 export const Title = styled.Text`

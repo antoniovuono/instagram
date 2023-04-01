@@ -34,7 +34,7 @@ const Welcome: React.FC = () => {
                     </ContentText>
                 </WelcomeContent>
             </Container>
-            <BottomContent />
+            <BottomContent signIn />
         </>
     );
 };

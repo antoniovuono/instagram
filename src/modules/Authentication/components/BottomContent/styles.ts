@@ -16,9 +16,14 @@ export const Container = styled.View`
     `}
 `;
 
-export const DescriptionTitle = styled.Text<{ isBold?: boolean }>`
-    ${({ theme, isBold }) => css`
-        color: ${theme.colors.primaryTitleColor};
+export const DescriptionTitle = styled.Text<{
+    isBold?: boolean;
+    isBlue?: boolean;
+}>`
+    ${({ theme, isBold, isBlue }) => css`
+        color: ${isBlue
+            ? theme.colors.buttonColor
+            : theme.colors.primaryTitleColor};
         font-family: ${isBold
             ? theme.fonts.primaryBlack
             : theme.fonts.primaryRegular};
