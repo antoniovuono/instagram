@@ -6,6 +6,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "splash": {
+        "backgroundColor": "#000000"
+    },
     "plugins": [
       "expo-build-properties"
     ]

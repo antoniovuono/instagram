@@ -7,6 +7,7 @@ import {
     Poppins_600SemiBold,
 } from "@expo-google-fonts/poppins";
 import Welcome from "@modules/Authentication/Welcome";
+import * as SplashScreen from "expo-splash-screen";
 import React from "react";
 import { StatusBar } from "react-native";
 import { ThemeProvider } from "styled-components";
@@ -25,6 +26,8 @@ const App: React.FC = () => {
     if (!fontsLoaded) {
         return null;
     }
+
+    setTimeout(SplashScreen.hideAsync, 5000);
 
     return (
         <ThemeProvider theme={theme}>
