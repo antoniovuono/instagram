@@ -5,12 +5,23 @@ import styled from "styled-components/native";
 export const Container = styled.View`
     flex: 1;
     background-color: ${({ theme }) => theme.colors.backgroundColor};
-    padding: 12px;
+`;
+
+export const HeaderWithGoBack = styled.View`
+    padding: 40px 12px;
     justify-content: center;
+`;
+
+export const GoBackButton = styled.TouchableOpacity`
+    padding: 10px;
+    width: 13%;
 `;
 
 export const BodyContent = styled.View`
     align-items: center;
+    padding: 30px;
+    justify-content: center;
+    padding: 12px;
 `;
 
 export const SignInFormContent = styled.View`

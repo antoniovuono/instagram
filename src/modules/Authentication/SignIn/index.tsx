@@ -2,12 +2,16 @@ import LogotipoIcon from "@assets/icons/logotipo.svg";
 import PasswordInput from "@components/PasswordInput";
 import PrimaryButton from "@components/PrimaryButton";
 import TextInput from "@components/TextInput";
+import { Ionicons } from "@expo/vector-icons";
 import React, { useState } from "react";
+import { useTheme } from "styled-components";
 
 import {
     BodyContent,
     ButtonAuthenticateContent,
     Container,
+    GoBackButton,
+    HeaderWithGoBack,
     SignInFormContent,
     SignUpTextContent,
     SignUpTextLabel,
@@ -19,9 +23,21 @@ const SignIn: React.FC = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
+    const theme = useTheme();
+
     return (
         <>
             <Container>
+                <HeaderWithGoBack>
+                    <GoBackButton>
+                        <Ionicons
+                            name="arrow-back-outline"
+                            size={24}
+                            color={theme.colors.primaryTitleColor}
+                        />
+                    </GoBackButton>
+                </HeaderWithGoBack>
+
                 <BodyContent>
                     <LogotipoIcon />
 
