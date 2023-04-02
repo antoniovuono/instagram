@@ -4,11 +4,16 @@ import { Container, Title } from "./styles";
 
 interface IButton {
     title: string;
+    onPressed?: () => void;
 }
 
-const PrimaryButton: React.FC<IButton> = ({ title, ...rest }) => {
+const PrimaryButton: React.FC<IButton> = ({ title, onPressed, ...rest }) => {
     return (
-        <Container {...rest} activeOpacity={0.7}>
+        <Container
+            onPress={onPressed}
+            activeOpacity={0.7}
+            testID="primary-button"
+        >
             <Title>{title}</Title>
         </Container>
     );
