@@ -9,6 +9,7 @@ import {
 import SignIn from "@modules/Authentication/SignIn";
 import SignUp from "@modules/Authentication/SignUp";
 import Welcome from "@modules/Authentication/Welcome";
+import Dashboard from "@modules/Dashboard";
 import * as SplashScreen from "expo-splash-screen";
 import React from "react";
 import { StatusBar } from "react-native";
@@ -38,7 +39,7 @@ const App: React.FC = () => {
                 translucent
                 barStyle="light-content"
             />
-            <SignIn />
+            <Dashboard />
         </ThemeProvider>
     );
 };
