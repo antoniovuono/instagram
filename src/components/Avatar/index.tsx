@@ -7,7 +7,7 @@ interface IAvatar {
 }
 
 const Avatar: React.FC<IAvatar> = ({ url }) => {
-    return <Container source={{ uri: url }} />;
+    return <Container testID="image" source={{ uri: url }} />;
 };
 
 export default Avatar;
